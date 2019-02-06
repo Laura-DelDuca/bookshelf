@@ -8,7 +8,7 @@
 
 import * as React from "react";
 import ReactDOM from "react-dom";
-import HelloWorld from "./components/hello";
 import "./../styles/app.css";
+import NavBar from "./components/NavBar";
 
-ReactDOM.render(<HelloWorld />, document.querySelector("#app"));
+ReactDOM.render(<NavBar />, document.querySelector("#app"));
