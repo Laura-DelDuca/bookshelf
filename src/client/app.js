@@ -10,6 +10,6 @@ import * as React from "react";
 import ReactDOM from "react-dom";
 import "./../styles/app.css";
 
-import HelloWorld from "./components/hello";
+import Login from "./components/Login";
 
-ReactDOM.render(<HelloWorld />, document.querySelector("#app"));
+ReactDOM.render(<Login />, document.querySelector("#app"));
