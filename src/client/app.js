@@ -9,6 +9,8 @@
 import * as React from "react";
 import ReactDOM from "react-dom";
 import "./../styles/app.css";
-import NavBar from "./components/NavBar";
+// import NavBar from "./components/NavBar";
+import WriteReview from "./components/modal-writeReview";
 
-ReactDOM.render(<NavBar />, document.querySelector("#app"));
+// ReactDOM.render(<NavBar />, document.querySelector("#app"));
+ReactDOM.render(<WriteReview />, document.querySelector("#app"));

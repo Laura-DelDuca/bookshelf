@@ -5,7 +5,7 @@ class LogoUser extends React.Component {
     render() {
         return (
             <div>
-                <img className="navbarItems" id="logoUser" src={Image} />
+                <img className="navbarItems" src={Image} />
             </div>
         );
     }
