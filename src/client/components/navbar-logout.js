@@ -5,7 +5,7 @@ class LogOut extends React.Component {
     render() {
         return (
             <div>
-                <img className="navbarItems" src={Image} />
+                <img className="navbarItems" id="logoutbtn" src={Image} />
             </div>
         );
     }

@@ -5,7 +5,7 @@ class LogoLibrary extends React.Component {
     render() {
         return (
             <div>
-                <img className="navbarItems" src={Image} />
+                <img className="navbarItems" id="librarybtn" src={Image} />
             </div>
         );
     }
