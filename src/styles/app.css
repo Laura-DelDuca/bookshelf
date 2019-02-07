@@ -28,7 +28,9 @@ ul {
     text-decoration: none;
   }
 
-
+  textarea {
+    box-sizing:border-box;
+}
   .writeReview {
     background-color:#7B6E65; 
     width: 500px;
@@ -41,10 +43,16 @@ ul {
     background-color: #F6F399;
     border: 20px solid #F6F399;
     border-radius: 10px;
-    width: 280px;
-    height: 10px;
+    width: 240px;
+    height: 15px;
     margin-left: 110px;
     margin-top: 50px;
+    font-size: 10px;
+  }
+
+  ::placeholder {
+    font: monospace;
+    font-size: 12px;
   }
 
   #enterReview {
@@ -95,7 +103,13 @@ ul {
 }
 
 #closemodal {
-    
+    color: #7B6E65;
+    background-color: #F6F399;
+    border: none;
+    border-radius: 5px;
+    width: 60px;
+    height: 25px;
+    margin-left: 40px;
 }
 
 .sendbtn {
@@ -103,6 +117,11 @@ ul {
     border: none;
     margin-top: 20px;
     margin-left: 390px;
+}
+
+#stars {
+    width: 35px;
+    height: 35px;
 }
 
   /* Reset CSS 

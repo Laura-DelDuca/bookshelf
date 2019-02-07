@@ -2,6 +2,7 @@ import React from "react";
 import ReactModal from "react-modal";
 import Send from "./modal-send";
 import CommentLogo from "./modal-comment";
+import Stars from "./stars";
 
 class WriteReview extends React.Component {
     constructor() {
@@ -32,11 +33,12 @@ class WriteReview extends React.Component {
                     className="writeReview"
                     overlayClassName="overlayNewReview">
                     <form>
-                        <input id="enterTitle" type="text" name="NewReview" /> <br />
+                        <input id="enterTitle" type="text" name="NewReview" placeholder="Title" /> <br />
                         <span id="commentsection">
                             <CommentLogo />
-                            <textarea id="enterReview" name="myreview">Enter text here...</textarea> <br />
+                            <textarea id="enterReview" name="myreview" placeholder="Enter text here..."></textarea> <br />
                         </span>
+                        <Stars />
                         <button className="sendbtn">
                             <Send />
                         </button>
