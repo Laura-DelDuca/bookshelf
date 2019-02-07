@@ -6,7 +6,7 @@ export default class Login extends React.Component {
     render() {
         return (
             <div className="container_login">
-                <div className="header">
+                <div className="header_login">
                     <Logo />
                 </div>
                 <div className="input_area">
@@ -17,6 +17,9 @@ export default class Login extends React.Component {
                     <button className="connection_btn">
                         <Loginbutton />
                     </button>
+                </div>
+                <div className="footer_login">
+                    <p>{2019 - BeCode}</p>
                 </div>
             </div>
         );

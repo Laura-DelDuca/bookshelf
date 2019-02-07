@@ -10,6 +10,9 @@ import * as React from "react";
 import ReactDOM from "react-dom";
 import "./../styles/app.css";
 
-import Login from "./components/Login";
+import Library from "./components/Library";
+ReactDOM.render(<Library />, document.querySelector("#app"));
 
-ReactDOM.render(<Login />, document.querySelector("#app"));
+// import Login from "./Components/Login"
+// import NavBar from "./components/NavBar";
+// import WriteReview from "./components/modal-writeReview";

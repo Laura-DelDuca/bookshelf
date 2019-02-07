@@ -50,6 +50,7 @@
     "express": "^4.16.4",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
+    "react-modal": "^3.8.1",
     "react-router-dom": "^4.3.1"
   },
   "husky": {
