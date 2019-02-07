@@ -1,13 +1,13 @@
 import React from "react";
 
-class Button extends React.Component {
+class ButtonReview extends React.Component {
     render() {
         return (
             <div>
-                <button onClick={this.props.onClick}>Write a Review</button>
+                <button onClick={this.props.onClick}>{"Write a Review"}</button>
             </div>
         );
     }
 }
 
-export default Button;
+export default ButtonReview;

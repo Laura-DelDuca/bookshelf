@@ -30,7 +30,9 @@ class WriteReview extends React.Component {
                     className="writeReview"
                     overlayClassName="overlayNewReview">
                     <ReviewForm />
-                    <button id="closemodal" onClick={this.handleCloseModal}>Close</button>
+                    <button id="closemodal" onClick={this.handleCloseModal}>
+                        {"Close"}
+                    </button>
                 </ReactModal>
             </div>
         );
