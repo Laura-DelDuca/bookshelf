@@ -1,8 +1,10 @@
-export const establishments = [
+export const books = [
     {
-        id: "0890786GH",
-        name: "Biberium",
-        description: "Un super bar karaoké",
+        title: "Design émotionnel",
+        author: "Aarron Walter",
+        id: "978-2-212-13998-1",
+        language: "FR",
+        format: "hardcover",
     },
     {
         id: "0890786GD",

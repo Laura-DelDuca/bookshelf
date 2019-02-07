@@ -19,7 +19,7 @@ export default class Login extends React.Component {
                     </button>
                 </div>
                 <div className="footer_login">
-                    <p>{2019 - BeCode}</p>
+                    <p>{"2019 - BeCode©"}</p>
                 </div>
             </div>
         );

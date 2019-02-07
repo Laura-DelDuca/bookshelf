@@ -1,5 +1,6 @@
 import * as React from "react";
-import NavBar from "./NavBar";
+import NavBar from "./navbar";
+import listBooks from "./Library_Availablebooks";
 
 export default class Library extends React.Component {
     render() {
@@ -9,23 +10,19 @@ export default class Library extends React.Component {
                     <NavBar />
                 </div>
                 <div className="titleavailable_library">
-                    <h2>{Availablebooks}</h2>
+                    <h2>{"Available books"}</h2>
                 </div>
                 <div className="available_library">
-                    <ul>
-                        <li>{Livre1}</li>
-                        <li>{Livre2}</li>
-                        <li>{Livre3}</li>
-                    </ul>
+                    <listBooks />
                 </div>
                 <div className="titleborrowed_library">
-                    <h2>{Borrowedbooks}</h2>
+                    <h2>{"Borrowed books"}</h2>
                 </div>
                 <div className="borrowed_library">
                     <ul>
-                        <li>{Livre1}</li>
-                        <li>{Livre2}</li>
-                        <li>{Livre3}</li>
+                        <li>{"Livre 1"}</li>
+                        <li>{"Livre 2"}</li>
+                        <li>{"Livre 3"}</li>
                     </ul>
                 </div>
             </div>

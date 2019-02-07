@@ -12,7 +12,3 @@ import "./../styles/app.css";
 
 import Library from "./components/Library";
 ReactDOM.render(<Library />, document.querySelector("#app"));
-
-// import Login from "./Components/Login"
-// import NavBar from "./components/NavBar";
-// import WriteReview from "./components/modal-writeReview";

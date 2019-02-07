@@ -6,17 +6,17 @@ import LogOut from "./navbar-logout";
 class NavBar extends React.Component {
     render() {
         return (
-            <ul id="navbar">
-                <li>
+            <div id="divnavbar">
+                <div id="library">
                     <LogoLibrary />
-                </li>
-                <li>
+                </div>
+                <div id="user">
                     <LogoUser />
-                </li>
-                <li>
+                </div>
+                <div id="logout">
                     <LogOut />
-                </li>
-            </ul>
+                </div>
+            </div>
         );
     }
 }
