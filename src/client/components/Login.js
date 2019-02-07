@@ -6,13 +6,15 @@ export default class Login extends React.Component {
     render() {
         return (
             <div className="container_login">
-                <div className="login_item-1">
+                <div className="header">
                     <Logo />
                 </div>
-                <div className="login_item-2">
+                <div className="input_area">
                     <input className="login_input" placeholder="Login" />
                     <input className="login_input" placeholder="Password" />
-                    <button className="connection">
+                </div>
+                <div className="btn_area">
+                    <button className="connection_btn">
                         <Loginbutton />
                     </button>
                 </div>

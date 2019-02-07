@@ -7,8 +7,8 @@ class Loginbutton extends React.Component {
             <div id="loginbutton">
                 <img
                     src={loginbutton}
-                    alt="Connexion Button"
-                    className="connexion_btn"
+                    className="connection_img"
+                    alt="Connection Button"
                 />
             </div>
         );
