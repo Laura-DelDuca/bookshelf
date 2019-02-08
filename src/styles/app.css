@@ -69,12 +69,106 @@ ul {
   
 /* Modal */
 
-  textarea {
-      overflow: auto;
-      vertical-align: top;
-      resize: vertical;
+textarea {
+    box-sizing:border-box;
+}
+  .writeReview {
+    background-color:#7B6E65; 
+    width: 500px;
+    height: 550px;
+    border: 2px solid #7B6E65;
+    border-radius: 10px;
   }
-  
+
+  #enterTitle {
+    background-color: #F6F399;
+    border: 20px solid #F6F399;
+    border-radius: 10px;
+    width: 240px;
+    height: 15px;
+    margin-left: 110px;
+    margin-top: 50px;
+    font-size: 10px;
+  }
+
+  ::placeholder {
+    font: monospace;
+    font-size: 12px;
+  }
+
+  #enterReview {
+    background-color: #F6F399;
+    width: 280px;
+    height: 280px;
+    border: 20px solid #F6F399;
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-top: 30px;
+  }
+
+  .overlayNewReview {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right :0;
+    align-items: center
+  }
+
+#commentlogo {
+    width: 35px;
+    height: 35px;
+    margin-left: 45px;
+    margin-top: 30px;
+    float: left;
+}
+
+#commentsection {
+    display:flex;
+}
+
+#sendlogo {
+    width: 35px;
+    height: 35px;
+}
+
+#divsendlogo {
+    background-color: #7B6E65;
+}
+
+#divcommentlogo {
+    background-color: #7B6E65;
+}
+
+#closemodal {
+    color: #7B6E65;
+    background-color: #F6F399;
+    border: none;
+    border-radius: 5px;
+    width: 60px;
+    height: 25px;
+    margin-left: 40px;
+}
+
+.sendbtn {
+    background-color:  #7B6E65;
+    border: none;
+    margin-top: 20px;
+    margin-left: 390px;
+}
+
+.stars {
+     width: 20px;
+    height: 20px;
+}
+#stars {
+   
+    margin-top: 10px;
+    margin-left: 110px;
+}
   /**
    * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
    */

@@ -10,5 +10,5 @@ import * as React from "react";
 import ReactDOM from "react-dom";
 import "./../styles/app.css";
 
-import Test from "./components/Library_Availablebooks";
-ReactDOM.render(<Test />, document.querySelector("#app"));
+import WriteReview from "./components/modal-writeReview";
+ReactDOM.render(<WriteReview />, document.querySelector("#app"));
