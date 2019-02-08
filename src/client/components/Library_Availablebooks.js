@@ -7,8 +7,7 @@ export default class Booklist extends React.Component {
             return (
                 <li key={book.id} className="book">
                     <h3>{book.name}</h3>
-
-                    {book.description}
+                    <h4>{book.author}</h4>
                 </li>
             );
         });
