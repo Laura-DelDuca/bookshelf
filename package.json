@@ -47,6 +47,7 @@
   },
   "dependencies": {
     "@svgr/webpack": "^4.1.0",
+    "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
