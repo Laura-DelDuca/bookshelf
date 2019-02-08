@@ -3,19 +3,19 @@ import ReactModal from "react-modal";
 import ReviewForm from "./addReview-form";
 
 class WriteReview extends React.Component {
-    // constructor() {
-    //     super();
-    //     this.state = {
-    //         showModal: false,
-    //     };
+    constructor() {
+        super();
+        this.state = {
+            showModal: false,
+        };
 
-    //     this.handleOpenModal = this.handleOpenModal.bind(this);
-    //     this.handleCloseModal = this.handleCloseModal.bind(this);
-    // }
+        this.handleOpenModal = this.handleOpenModal.bind(this);
+        // this.handleCloseModal = this.handleCloseModal.bind(this);
+    }
 
-    // handleOpenModal() {
-    //     this.setState({showModal: true});
-    // }
+    handleOpenModal() {
+        this.setState({showModal: true});
+    }
 
     // handleCloseModal() {
     //     this.setState({showModal: false});
@@ -24,15 +24,14 @@ class WriteReview extends React.Component {
     render() {
         return (
             <div>
+                <button onClick={this.handleOpenModal}>{"Open Modal"}</button>
                 <ReactModal
                     isOpen={this.state.showModal}
                     contentLabel="Minimal Modal Example"
                     className="writeReview"
                     overlayClassName="overlayNewReview">
                     <ReviewForm />
-                    <button id="closemodal" onClick={this.handleCloseModal}>
-                        {"Close"}
-                    </button>
+                    <button id="closemodal">{"Close"}</button>
                 </ReactModal>
             </div>
         );

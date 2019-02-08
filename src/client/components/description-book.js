@@ -1,7 +1,7 @@
 import React from "react";
 import NavBar from "./navbar";
 import ButtonReview from "./btn";
-// import WriteReview from "./modal-writeReview";
+import WriteReview from "./modal-writeReview";
 
 class Description extends React.Component {
     constructor() {
@@ -28,6 +28,7 @@ class Description extends React.Component {
                 </div>
                 <div>
                     <ButtonReview onClick={this.handleOpenModal} />
+                    <WriteReview displayed={this.state.showModal} />
                 </div>
             </div>
         );
