@@ -1,6 +1,7 @@
 export const books = [
     {
-        title: "Design émotionnel",
+        name: "Design émotionnel",
+        description: "blabla",
         author: "Aarron Walter",
         id: "978-2-212-13998-1",
         language: "FR",

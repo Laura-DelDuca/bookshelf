@@ -1,6 +1,7 @@
 import React from "react";
 import NavBar from "./navbar";
-import Button from "./btn";
+import ButtonReview from "./btn";
+// import WriteReview from "./modal-writeReview";
 
 class Description extends React.Component {
     constructor() {
@@ -21,12 +22,12 @@ class Description extends React.Component {
     }
     render() {
         return (
-            <div>
+            <div id="descriptionPage">
                 <div>
                     <NavBar />
                 </div>
                 <div>
-                    <Button onClick={this.handleOpenModal} />
+                    <ButtonReview onClick={this.handleOpenModal} />
                 </div>
             </div>
         );

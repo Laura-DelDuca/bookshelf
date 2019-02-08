@@ -28,7 +28,7 @@
 
 #user{
     border-right: 6px solid #FFF2BF;
-    padding-right: 10px;
+    padding-right: 15px;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;
@@ -170,6 +170,11 @@ ul {
    
     margin-top: 10px;
     margin-left: 110px;
+}
+
+
+#descriptionPage {
+    background-color: #E1594D;
 }
 
   /* Reset CSS 

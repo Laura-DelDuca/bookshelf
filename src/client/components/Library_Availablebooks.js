@@ -1,19 +1,21 @@
 import * as React from "react";
 import {books} from "./databasetest";
 
-export default class listBooks extends React.Component {
+export default class Test extends React.Component {
     render() {
-        const BookList = books.map(book => {
+        const listBook = books.map(book => {
             return (
-                <li key={book.id}>
-                    <h3>{book.title}</h3>
+                <li key={book.id} className="book">
+                    <h3>{book.name}</h3>
+
+                    {book.description}
                 </li>
             );
         });
 
         return (
-            <div>
-                <div>{BookList}</div>
+            <div className="App">
+                <div>{listBook}</div>
             </div>
         );
     }
