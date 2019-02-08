@@ -5,6 +5,10 @@
  * coded by leny@BeCode
  * started at 18/01/2019
  * code oli
+ tout le routage est ici
+ et l'appel des controlers pas les contrôleurs 
+ le port d'ecoute
+ 
  */
 
 import express from "express";
@@ -34,7 +38,7 @@ const newBook = {
 
 allBook = [...allBook, newBook];
 /* il faut avoir un formulaire en methode post
-    dans la react j'accede au post avec node
+dans la react j'accede au post avec node
 */
 // on recupere le idleware dans une variable
 
