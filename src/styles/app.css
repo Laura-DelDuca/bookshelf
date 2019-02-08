@@ -50,7 +50,7 @@
 }
 
 #divnavbar {
-    margin: 30px;
+    margin: 0 30px;
     display: grid;
     grid-template-columns: 10% 10% 80%;
     grid-template-rows: 100%;
@@ -143,9 +143,16 @@ textarea {
     background-color: #7B6E65;
 }
 
+#divcloselogo {
+    background-color: #7B6E65;
+}
+
+
 #closelogo {
     width: 35px;
     height: 35px;
+    background-color: #7B6E65;
+    border:none;
 }
 
 #closemodal {
@@ -163,6 +170,13 @@ textarea {
     border: none;
     margin-top: 20px;
     margin-left: 390px;
+}
+
+#closebtn {
+    background-color:  #7B6E65;
+    border: none;
+    margin-left: 30px;
+    margin-bottom: 30px;
 }
 
 .stars {
@@ -274,6 +288,9 @@ textarea {
 
 #descriptionPage {
     background-color: #E1594D;
+    height: 100vh;
+    padding-top: 30px;
+
 }
 
   /* Reset CSS 

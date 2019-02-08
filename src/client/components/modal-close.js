@@ -4,11 +4,9 @@ import Image from "../images/close.png";
 class Close extends React.Component {
     render() {
         return (
-            <div id="divcloselogo">
-                <button onClick={this.props.onClick}>
-                    <img id="closelogo" src={Image} />
-                </button>
-            </div>
+            <button id="closebtn" onClick={this.props.onClick}>
+                <img id="closelogo" src={Image} />
+            </button>
         );
     }
 }
