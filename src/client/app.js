@@ -10,5 +10,7 @@ import * as React from "react";
 import ReactDOM from "react-dom";
 import "./../styles/app.css";
 
-import WriteReview from "./components/modal-writeReview";
-ReactDOM.render(<WriteReview />, document.querySelector("#app"));
+// import WriteReview from "./components/modal-writeReview";
+// ReactDOM.render(<WriteReview />, document.querySelector("#app"));
+import Description from "./components/description-book.js";
+ReactDOM.render(<Description />, document.querySelector("#app"));

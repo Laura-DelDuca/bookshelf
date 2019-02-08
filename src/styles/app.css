@@ -143,6 +143,11 @@ textarea {
     background-color: #7B6E65;
 }
 
+#closelogo {
+    width: 35px;
+    height: 35px;
+}
+
 #closemodal {
     color: #7B6E65;
     background-color: #F6F399;
