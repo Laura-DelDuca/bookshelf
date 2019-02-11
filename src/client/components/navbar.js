@@ -21,7 +21,10 @@ class NavBar extends React.Component {
                     </Link>
                 </div>
                 <div id="logout">
-                    <LogOut />
+                    <Link to="/login">
+                        {" "}
+                        <LogOut />
+                    </Link>
                 </div>
             </div>
         );
