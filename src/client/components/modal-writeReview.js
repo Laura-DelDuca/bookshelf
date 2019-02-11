@@ -1,6 +1,7 @@
 import React from "react";
 import ReactModal from "react-modal";
 import ReviewForm from "./addReview-form";
+import Close from "./modal-close";
 
 class WriteReview extends React.Component {
     constructor() {
@@ -31,7 +32,7 @@ class WriteReview extends React.Component {
                     className="writeReview"
                     overlayClassName="overlayNewReview">
                     <ReviewForm />
-                    <button id="closemodal">{"Close"}</button>
+                    <Close onClick={this.handleCloseModal} />
                 </ReactModal>
             </div>
         );
