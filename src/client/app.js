@@ -1,16 +1,31 @@
-/* becodeorg/bookshelf
- *
- * /src/client/app.js - Client entry point
- *
- * coded by leny@BeCode
- * started at 18/01/2019
- */
+// import * as React from "react";
+// import ReactDOM from "react-dom";
+// import "./../styles/app.css";
 
-import * as React from "react";
+// import Description from "./components/description-book.js";
+// ReactDOM.render(<Description />, document.querySelector("#app"));
+import React from "react";
 import ReactDOM from "react-dom";
 import "./../styles/app.css";
+import {Route, BrowserRouter as Router, Switch} from "react-router-dom";
+import Library from "./components/Library";
+import Description from "./components/description-book";
+import UserPage from "./components/user-page";
 
-// import WriteReview from "./components/modal-writeReview";
-// ReactDOM.render(<WriteReview />, document.querySelector("#app"));
-import Description from "./components/description-book.js";
-ReactDOM.render(<Description />, document.querySelector("#app"));
+export default class Routing extends React.Component {
+    render() {
+        return (
+            <Router>
+                <div>
+                    <Switch>
+                        <Route exact path="/" component={Description} />
+                        <Route path="/library" component={Library} />
+                        <Route path="/user" component={UserPage} />
+                    </Switch>
+                </div>
+            </Router>
+        );
+    }
+}
+
+ReactDOM.render(<Routing />, document.getElementById("app"));
