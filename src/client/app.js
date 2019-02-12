@@ -5,6 +5,7 @@ import {Route, BrowserRouter as Router, Switch} from "react-router-dom";
 import Library from "./components/Library";
 import Description from "./components/description-book";
 import UserPage from "./components/user-page";
+import Login from "./components/Login";
 
 export default class Routing extends React.Component {
     render() {
@@ -13,6 +14,7 @@ export default class Routing extends React.Component {
                 <div>
                     <Switch>
                         <Route exact path="/" component={Library} />
+                        <Route path="/login" component={Login} />
                         <Route path="/library" component={Library} />
                         <Route path="/user" component={UserPage} />
                         <Route path="/description" component={Description} />

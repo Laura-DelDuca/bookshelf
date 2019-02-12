@@ -10,19 +10,19 @@ export default class Library extends React.Component {
                     <NavBar />
                 </div>
                 <div className="titleavailable_library">
-                    <h2>{"Available books"}</h2>
+                    <h2>{"Available Books"}</h2>
+                    <div className="underline" />
                 </div>
                 <div className="available_library">
                     <Booklist />
                 </div>
                 <div className="titleborrowed_library">
-                    <h2>{"Borrowed books"}</h2>
+                    <h2>{"Borrowed Books"}</h2>
+                    <div className="underline" />
                 </div>
                 <div className="borrowed_library">
                     <ul>
-                        <li>{"Livre 1"}</li>
-                        <li>{"Livre 2"}</li>
-                        <li>{"Livre 3"}</li>
+                        <Booklist />
                     </ul>
                 </div>
             </div>
