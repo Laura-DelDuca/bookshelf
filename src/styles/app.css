@@ -290,7 +290,12 @@ textarea {
     background-color: #E1594D;
     height: 100vh;
     padding-top: 30px;
+}
 
+#userpage {
+    background-color: #F6F399;
+    height: 100vh;
+    padding-top: 30px;
 }
 
   /* Reset CSS 

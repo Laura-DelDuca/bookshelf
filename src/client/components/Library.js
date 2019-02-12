@@ -6,7 +6,7 @@ export default class Library extends React.Component {
     render() {
         return (
             <div className="container_library">
-                <div className="divnavbar">
+                <div>
                     <NavBar />
                 </div>
                 <div className="titleavailable_library">
