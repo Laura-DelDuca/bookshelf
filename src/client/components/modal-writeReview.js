@@ -25,7 +25,9 @@ class WriteReview extends React.Component {
     render() {
         return (
             <div>
-                <button onClick={this.handleOpenModal}>{"Open Modal"}</button>
+                <button id="writeamodalbtn" onClick={this.handleOpenModal}>
+                    {"Write a Review"}
+                </button>
                 <ReactModal
                     isOpen={this.state.showModal}
                     contentLabel="Minimal Modal Example"

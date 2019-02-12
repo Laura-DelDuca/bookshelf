@@ -68,6 +68,15 @@ ul {
   
 /* Modal */
 
+#writeamodalbtn {
+    background-color: #FAE6A3;
+    border: none;
+    color: #E1594D;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Nova Flat', cursive;
+}
+
 textarea {
     box-sizing:border-box;
 }
@@ -292,6 +301,7 @@ textarea {
 
 #descriptionPage {
     background-color: #E1594D;
+    font-family: 'Nova Flat', cursive;
     height: 100vh;
     padding-top: 30px;
     display: grid;
@@ -322,7 +332,6 @@ textarea {
 }
 
 .bookcover {
-    background-color: orangered;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 3;
@@ -333,6 +342,7 @@ textarea {
 
 #ISBN {
     margin-top: 10px;
+    color: white;
 }
 
 #bookcoverimage {
@@ -340,11 +350,26 @@ textarea {
 }
 
 .aboutthebook {
-    background-color: pink;
+    color: white;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
+}
+
+#borrowbtn{
+    background-color: #FAE6A3;
+    border: none;
+    color: #E1594D;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Nova Flat', cursive;
+}
+
+#reviewsinabout {
+    background-color: #F36356;
+    margin-right: 80px;
+    padding: 20px;
 }
 
   /* Reset CSS 
@@ -792,17 +817,20 @@ textarea {
 /* Positionnement */
 .container_library {
     display: grid;
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     background-color: #6D675D;
     grid-template-columns: 50px auto 50px;
-    grid-template-rows: 45px 30px 1fr 30px 1fr;
+    grid-template-rows: 65px 100px 1fr 100px 1fr;
     grid-row-gap: 20px;
     padding-top: 30px;
+    align-items: end;
 }
 
-.container_library img {
-    height: 250px;
+.book img {
+    box-shadow: 5px 5px 10px rgb(63, 63, 63);
+    height: 350px;
+    border: 2px solid white;
 }
 
 .container_library a {
@@ -848,10 +876,29 @@ textarea {
 /* Style */
 .titleavailable_library, .titleborrowed_library {
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Nova Flat', cursive;
     font-size: 2em;
 }
 
-.listbook {
+h3 {
+    font-family: 'Nova Flat', cursive;
+    font-size: 1em;
+    text-align: center;
+    padding: 10px;
+    width: 205px;
+}
+
+.book {
     list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.underline {
+    height: 3px;
+    width: 100%;
+    background-color: white;
+    margin: 5px 0;
+    box-shadow: 5px 5px 10px rgb(63, 63, 63);
 }
