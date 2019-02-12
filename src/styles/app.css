@@ -1,5 +1,4 @@
 /* NavBar */
-
 .navbarItems {
   height: 40px;
   padding: 15px;
@@ -285,17 +284,67 @@ textarea {
     margin-left: 110px;
 }
 
+#userpage {
+    background-color: #F6F399;
+    height: 100vh;
+    padding-top: 30px;
+}
 
 #descriptionPage {
     background-color: #E1594D;
     height: 100vh;
     padding-top: 30px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 20% 10% 60% 10%;
 }
 
-#userpage {
-    background-color: #F6F399;
-    height: 100vh;
-    padding-top: 30px;
+#navbar-descriptionpage {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.booktitle {
+    color: white;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+#booktitle {
+    font-family: 'Nova Flat', cursive;
+    font-size: 2em;
+    margin-left: 150px;
+    text-decoration: underline;
+}
+
+.bookcover {
+    background-color: orangered;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    align-self: center;
+    justify-self: center;
+}
+
+#ISBN {
+    margin-top: 10px;
+}
+
+#bookcoverimage {
+    width: 150px;
+}
+
+.aboutthebook {
+    background-color: pink;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
 }
 
   /* Reset CSS 
@@ -747,7 +796,7 @@ textarea {
     width: 100vw;
     background-color: #6D675D;
     grid-template-columns: 50px auto 50px;
-    grid-template-rows: 30px 1fr 30px 1fr;
+    grid-template-rows: 45px 30px 1fr 30px 1fr;
     grid-row-gap: 20px;
     padding-top: 30px;
 }
@@ -761,32 +810,39 @@ textarea {
     color: white;
 }
 
-.titleavailable_library {
-    grid-column-start: 2;
-    grid-column-end: 3;
+.navbar_library {
+    grid-column-start: 1;
+    grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
 }
 
-.available_library {
+.titleavailable_library {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
 }
 
-.titleborrowed_library {
+.available_library {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
 }
 
-.borrowed_library {
+.titleborrowed_library {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
+}
+
+.borrowed_library {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
 }
 
 /* Style */
