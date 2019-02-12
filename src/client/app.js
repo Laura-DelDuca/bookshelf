@@ -1,19 +1,27 @@
-// import * as React from "react";
-// import ReactDOM from "react-dom";
-// import "./../styles/app.css";
-
-// import Library from "./components/Library.js";
-// ReactDOM.render(<Library />, document.querySelector("#root"));
-
 import React from "react";
-class App extends React.Component {
+import ReactDOM from "react-dom";
+import "./../styles/app.css";
+import {Route, BrowserRouter as Router, Switch} from "react-router-dom";
+import Library from "./components/Library";
+import Description from "./components/description-book";
+import UserPage from "./components/user-page";
+import Login from "./components/Login";
+
+export default class Routing extends React.Component {
     render() {
         return (
-            <div>
-                <h1>{"Home"}</h1>
-            </div>
+            <Router>
+                <div>
+                    <Switch>
+                        <Route exact path="/" component={Description} />
+                        <Route path="/library" component={Library} />
+                        <Route path="/user" component={UserPage} />
+                        <Route path="/login" component={Login} />
+                    </Switch>
+                </div>
+            </Router>
         );
     }
 }
 
-export default App;
+ReactDOM.render(<Routing />, document.getElementById("app"));

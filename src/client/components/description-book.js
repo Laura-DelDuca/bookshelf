@@ -1,6 +1,5 @@
 import React from "react";
 import NavBar from "./navbar";
-// import ButtonReview from "./btn";
 import WriteReview from "./modal-writeReview";
 
 class Description extends React.Component {
@@ -20,6 +19,7 @@ class Description extends React.Component {
     handleCloseModal() {
         this.setState({showModal: false});
     }
+
     render() {
         return (
             <div id="descriptionPage">
@@ -27,7 +27,6 @@ class Description extends React.Component {
                     <NavBar />
                 </div>
                 <div>
-                    {/* <ButtonReview onClick={this.handleOpenModal} /> */}
                     <WriteReview displayed={this.state.showModal} />
                 </div>
             </div>

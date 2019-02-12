@@ -1,9 +1,8 @@
 export const books = [
     {
-        title: "Design émotionnel",
-        summary: "blabla",
-        author: "Aarron Walter",
-        id: "978-2-212-13998-1",
+        name: "Design émotionnel",
+        author: "Jeremy Keith",
+        id: "9-782212-128611",
         language: "FR",
         format: "hardcover",
         img: "https://images-na.ssl-images-amazon.com/images/I/61wMJ4uS4QL.jpg",

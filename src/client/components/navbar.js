@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import LogoLibrary from "./navbar-library";
 import LogoUser from "./navbar-user";
 import LogOut from "./navbar-logout";
@@ -8,13 +9,22 @@ class NavBar extends React.Component {
         return (
             <div id="divnavbar">
                 <div id="library">
-                    <LogoLibrary />
+                    <Link to="/library">
+                        {" "}
+                        <LogoLibrary />{" "}
+                    </Link>
                 </div>
                 <div id="user">
-                    <LogoUser />
+                    <Link to="/user">
+                        {" "}
+                        <LogoUser />
+                    </Link>
                 </div>
                 <div id="logout">
-                    <LogOut />
+                    <Link to="/login">
+                        {" "}
+                        <LogOut />
+                    </Link>
                 </div>
             </div>
         );

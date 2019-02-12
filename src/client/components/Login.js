@@ -1,4 +1,5 @@
 import * as React from "react";
+import {Link} from "react-router-dom";
 import Logo from "./Login-logo";
 import Loginbutton from "./Login-connection";
 
@@ -15,7 +16,10 @@ export default class Login extends React.Component {
                 </div>
                 <div className="btn_area">
                     <button className="connection_btn">
-                        <Loginbutton />
+                        <Link to="/library">
+                            {" "}
+                            <Loginbutton />{" "}
+                        </Link>
                     </button>
                 </div>
                 <div className="footer_login">
