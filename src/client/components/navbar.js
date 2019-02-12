@@ -7,7 +7,7 @@ import LogOut from "./navbar-logout";
 class NavBar extends React.Component {
     render() {
         return (
-            <div id="divnavbar">
+            <div className="divnavbar">
                 <div id="library">
                     <Link to="/library">
                         {" "}

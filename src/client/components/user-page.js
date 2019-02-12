@@ -1,10 +1,13 @@
 import React from "react";
+import NavBar from "./navbar";
 
 class UserPage extends React.Component {
     render() {
         return (
             <div>
-                <p>{"Je suis l'espace membre"}</p>
+                <div className="divnavbar">
+                    <NavBar />
+                </div>
             </div>
         );
     }

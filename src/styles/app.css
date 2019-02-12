@@ -49,7 +49,7 @@
     align-self: center;
 }
 
-#divnavbar {
+.divnavbar {
     margin: 0 30px;
     display: grid;
     grid-template-columns: 10% 10% 80%;
