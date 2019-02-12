@@ -1,10 +1,12 @@
 import * as React from "react";
 import Booklist from "./Library_Availablebooks";
+import NavBar from "./navbar";
 
 export default class Library extends React.Component {
     render() {
         return (
             <div className="container_library">
+                <NavBar />
                 <div className="titleavailable_library">
                     <h2>{"Available books"}</h2>
                 </div>

@@ -13,10 +13,10 @@ export default class Routing extends React.Component {
             <Router>
                 <div>
                     <Switch>
-                        <Route exact path="/" component={Description} />
+                        <Route exact path="/" component={Login} />
                         <Route path="/library" component={Library} />
                         <Route path="/user" component={UserPage} />
-                        <Route path="/login" component={Login} />
+                        <Route path="/description" component={Description} />
                     </Switch>
                 </div>
             </Router>
