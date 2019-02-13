@@ -4,8 +4,8 @@ import NavBar from "./navbar";
 class UserPage extends React.Component {
     render() {
         return (
-            <div>
-                <div className="divnavbar">
+            <div id="userpage">
+                <div className="navbar-userpage">
                     <NavBar />
                 </div>
             </div>

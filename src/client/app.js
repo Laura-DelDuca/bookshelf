@@ -6,6 +6,7 @@ import Library from "./components/Library";
 import Description from "./components/description-book";
 import UserPage from "./components/user-page";
 import Login from "./components/Login";
+import addBook from "./components/addBook-form";
 
 export default class Routing extends React.Component {
     render() {
@@ -18,6 +19,7 @@ export default class Routing extends React.Component {
                         <Route path="/library" component={Library} />
                         <Route path="/user" component={UserPage} />
                         <Route path="/description" component={Description} />
+                        <Route path="/addbook" component={addBook} />
                     </Switch>
                 </div>
             </Router>
