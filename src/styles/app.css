@@ -938,3 +938,19 @@ h3 {
     margin: 5px 0;
     box-shadow: 5px 5px 10px rgb(63, 63, 63);
 }
+
+/* ☆::::::::::::::::::: CSS COMPONENT addBook :::::::::::::::::::☆ */
+
+.addbookform {
+    padding-top: 30px;
+    height: 100h;
+    width: 100vw;
+    background-color: #6D675D;
+}
+
+/* .navbar-addbook {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+} */
