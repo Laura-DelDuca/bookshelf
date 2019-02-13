@@ -34,17 +34,22 @@ class Description extends React.Component {
                         id="bookcoverimage"
                         src="https://images-na.ssl-images-amazon.com/images/I/61wMJ4uS4QL.jpg"
                     />
-                    <p id="ISBN">{"ISBN = 98698943860984"}</p>
+                    <p id="ISBN">{"ISBN ="}</p>
                 </div>
                 <div className="aboutthebook">
                     <p>{"Language"}</p>
                     <p>{"Author"}</p>
                     <p>{"Format"}</p>
-                    <p>{"Stars"}</p>
                     <p>{"Available"}</p>
-                    <button>{"Borrow"}</button>
-                    <WriteReview displayed={this.state.showModal} />
-                    <div>
+                    <button id="borrowbtn">{"Borrow"}</button>
+                    <button id="writeamodalbtn" onClick={this.handleOpenModal}>
+                        {"Write a Review"}
+                    </button>
+                    <WriteReview
+                        close={this.handleCloseModal}
+                        isOpen={this.state.showModal}
+                    />
+                    <div id="reviewsinabout">
                         <p>{"Reviews:"}</p>
                         <p>{"author"}</p>
                         <p>{"blabla"}</p>

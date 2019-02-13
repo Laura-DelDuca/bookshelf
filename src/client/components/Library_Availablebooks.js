@@ -8,7 +8,7 @@ export default class Booklist extends React.Component {
                 <a href="#">
                     <li key={book.id}>
                         <img src={book.img} alt="Book Cover" />
-                        <h3>{book.name}</h3>
+                        <h3>{book.title}</h3>
                     </li>
                 </a>
             );
