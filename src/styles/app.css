@@ -371,10 +371,17 @@ textarea {
 #userpage {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 20% 80%;
+    grid-template-rows: 30% 70%;
     background-color: #fab95b;
     height: 100vh;
     padding-top: 30px;
+}
+
+.navbar-userpage {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 .divBtnUser {
