@@ -943,14 +943,45 @@ h3 {
 
 .addbookform {
     padding-top: 30px;
-    height: 100h;
+    height: 100vh;
     width: 100vw;
     background-color: #6D675D;
 }
 
-/* .navbar-addbook {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
-} */
+.title-addbook {
+    color: white;
+    font-family: 'Nova Flat', cursive;
+    font-size: 1.2em;
+    display: inline;
+    text-align: center;
+}
+
+.form-addbook {
+    width: 470px;
+    margin: 0 auto;
+    text-align: right;
+    margin: 0 auto;
+    background-color: rgb(133, 126, 114);
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.form-addbook input {
+    margin: 5px 0;
+}
+
+.submit-book {
+    text-align: center;
+    margin: 0 auto;
+    background-color: #3FAA94;
+    border-radius: 30px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+
+.form-addbook input {
+    width: 330px;
+}

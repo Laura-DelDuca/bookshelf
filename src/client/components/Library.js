@@ -13,6 +13,7 @@ export default class Library extends React.Component {
                 <div className="titleavailable_library">
                     <h2>{"Available Books"}</h2>
                     <Link to="/addbook">{"(Add a Book)"}</Link>
+                    <Link to="/adduser">{"(Add a User)"}</Link>
                     <div className="underline" />
                 </div>
                 <div className="available_library">
