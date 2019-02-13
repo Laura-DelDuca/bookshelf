@@ -6,8 +6,8 @@ class addUser extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            Username: " ",
-            Password: " ",
+            Username: "",
+            Password: "",
         };
 
         this.handleInputChange = this.handleInputChange.bind(this);
