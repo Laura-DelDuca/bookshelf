@@ -27,10 +27,10 @@ class ReviewForm extends React.Component {
         console.log(this.state[name]);
     }
 
-    // handleSubmit(event) {
-    //     alert("sent");
-    //     event.preventDefault();
-    // }
+    handleSubmit(event) {
+        alert("sent");
+        event.preventDefault();
+    }
 
     render() {
         return (
