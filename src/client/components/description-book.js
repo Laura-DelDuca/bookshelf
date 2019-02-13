@@ -42,7 +42,13 @@ class Description extends React.Component {
                     <p>{"Format"}</p>
                     <p>{"Available"}</p>
                     <button id="borrowbtn">{"Borrow"}</button>
-                    <WriteReview displayed={this.state.showModal} />
+                    <button id="writeamodalbtn" onClick={this.handleOpenModal}>
+                        {"Write a Review"}
+                    </button>
+                    <WriteReview
+                        close={this.handleCloseModal}
+                        isOpen={this.state.showModal}
+                    />
                     <div id="reviewsinabout">
                         <p>{"Reviews:"}</p>
                         <p>{"author"}</p>

@@ -94,7 +94,6 @@ textarea {
     width: 240px;
     height: 15px;
     margin-left: 110px;
-    margin-top: 50px;
     font-size: 10px;
   }
 
@@ -160,6 +159,8 @@ textarea {
     height: 35px;
     background-color: #7B6E65;
     border:none;
+    margin-left: 405px;
+    margin-top: 20px;
 }
 
 #closemodal {
@@ -371,7 +372,7 @@ textarea {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 20% 80%;
-    background-color: rgb(255, 179, 71);
+    background-color: #fab95b;
     height: 100vh;
     padding-top: 30px;
 }
