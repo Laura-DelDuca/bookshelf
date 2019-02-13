@@ -15,7 +15,7 @@ class WriteReview extends React.Component {
                     contentLabel="Minimal Modal Example"
                     className="writeReview"
                     overlayClassName="overlayNewReview">
-                    <Close onClick={this.props.close} />
+                    <Close id="closebtnReview" onClick={this.props.close} />
                     <ReviewForm />
                 </ReactModal>
             </div>

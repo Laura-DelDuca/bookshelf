@@ -1,5 +1,5 @@
 import React from "react";
-
+import Close from "./modal-close";
 class ChangePWForm extends React.Component {
     constructor(props) {
         super(props);

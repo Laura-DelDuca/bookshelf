@@ -79,6 +79,7 @@ ul {
 textarea {
     box-sizing:border-box;
 }
+
   .writeReview {
     background-color:#7B6E65; 
     width: 500px;
@@ -153,14 +154,10 @@ textarea {
     background-color: #7B6E65;
 }
 
-
-#closelogo {
+.closelogo {
     width: 35px;
     height: 35px;
-    background-color: #7B6E65;
     border:none;
-    margin-left: 405px;
-    margin-top: 20px;
 }
 
 #closemodal {
@@ -180,11 +177,9 @@ textarea {
     margin-left: 390px;
 }
 
-#closebtn {
-    background-color:  #7B6E65;
+.closebtn {
     border: none;
-    margin-left: 30px;
-    margin-bottom: 30px;
+    background-color: transparent;
 }
 
 .stars {
@@ -428,21 +423,21 @@ textarea {
 }
 
 .changePW {
+    color: white;
     font-family: 'Nova Flat', cursive;
-    background-color:#FFF2BF; 
+    background-color:#7B6E65; 
     width: 300px;
     height: 150px;
-    border: 2px solid #FFF2BF;
+    border: 2px solid #7B6E65;
     border-radius: 10px;
     padding-top: 30px;
     text-align: center;
 }
 
 #newPW {
-    color: white;
     font-size: 20px;
-    background-color: #7B6E65;
-    border: 10px solid #7B6E65;
+    background-color: #fab95b;
+    border: 10px solid #fab95b;
     border-radius: 10px;
     width: 240px;
     height: 15px;

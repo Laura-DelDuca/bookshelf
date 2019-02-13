@@ -11,10 +11,15 @@ class UserPage extends React.Component {
         };
 
         this.handleOpenModal = this.handleOpenModal.bind(this);
+        this.handleCloseModal = this.handleCloseModal.bind(this);
     }
 
     handleOpenModal() {
         this.setState({showModal: true});
+    }
+
+    handleCloseModal() {
+        this.setState({showModal: false});
     }
 
     render() {
@@ -29,7 +34,9 @@ class UserPage extends React.Component {
                 <div className="divBtnUser">
                     <button className="btnsUser">{"Borrowed Books"}</button>
                     <br />
-                    <button className="btnsUser">{"My Reviews"}</button>
+                    <button className="btnsUser" onClick={this.handleOpenModal}>
+                        {"My Reviews"}
+                    </button>
                     <br />
                     <button className="btnsUser" onClick={this.handleOpenModal}>
                         {"Change Password"}
@@ -37,7 +44,7 @@ class UserPage extends React.Component {
                 </div>
                 <div>
                     <ChangePW
-                        // close={this.handleCloseModal}
+                        close={this.handleCloseModal}
                         isOpen={this.state.showModal}
                     />
                 </div>
