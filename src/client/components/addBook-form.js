@@ -6,10 +6,10 @@ class addBook extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            Title: " ",
-            Author: " ",
-            ISBN: " ",
-            Language: " ",
+            Title: "",
+            Author: "",
+            ISBN: "",
+            Language: "",
             Hardcover: false,
             Ebook: false,
         };
