@@ -40,9 +40,13 @@ class addBook extends React.Component {
         return (
             <div className="addbookform">
                 <NavBar className="navbar-addbook" />
-                <form>
+                <form className="form-addbook">
+                    <h3 className="title-addbook">{"Add a Book to Library"}</h3>
+                    <div className="underline" />
+                    <br />
+                    <br />
                     <label>
-                        {"Title :"}
+                        <h3 className="title-addbook">{"Title :"}</h3>
                         <input
                             name="Title"
                             type="text"
@@ -52,7 +56,7 @@ class addBook extends React.Component {
                     </label>
                     <br />
                     <label>
-                        {"Author :"}
+                        <h3 className="title-addbook">{"Author :"}</h3>
                         <input
                             name="Author"
                             type="text"
@@ -62,7 +66,7 @@ class addBook extends React.Component {
                     </label>
                     <br />
                     <label>
-                        {"ISBN :"}
+                        <h3 className="title-addbook">{"ISBN :"}</h3>
                         <input
                             name="ISBN"
                             type="text"
@@ -72,7 +76,7 @@ class addBook extends React.Component {
                     </label>
                     <br />
                     <label>
-                        {"Language (FR/ENG) :"}
+                        <h3 className="title-addbook">{"FR / ENG :"}</h3>
                         <input
                             name="Language"
                             type="text"
@@ -82,7 +86,7 @@ class addBook extends React.Component {
                     </label>
                     <br />
                     <label>
-                        {"Hardcover :"}
+                        <h3 className="title-addbook">{"Hardcover :"}</h3>
                         <input
                             name="Hardcover"
                             type="checkbox"
@@ -91,7 +95,7 @@ class addBook extends React.Component {
                         />
                     </label>
                     <label>
-                        {"Ebook :"}
+                        <h3 className="title-addbook">{"Ebook :"}</h3>
                         <input
                             name="Ebook"
                             type="checkbox"
@@ -100,7 +104,11 @@ class addBook extends React.Component {
                         />
                     </label>
                     <br />
-                    <input type="submit" value="Submit" />
+                    <input
+                        type="submit"
+                        className="submit-book"
+                        value="Submit"
+                    />
                 </form>
             </div>
         );

@@ -1,6 +1,9 @@
 import React from "react";
+import {Link} from "react-router-dom";
 import NavBar from "./navbar";
 import Reader from "./reader-logo";
+import MyBorrowedBooks from "./area-borrowedBooks";
+import MyReviews from "./area-myReviews";
 import ChangePW from "./modal-changePW";
 
 class UserPage extends React.Component {
@@ -28,25 +31,34 @@ class UserPage extends React.Component {
                 <div className="navbar-userpage">
                     <NavBar />
                 </div>
+
                 <div id="divReaderImage">
                     <Reader />
                 </div>
-                <div className="divBtnUser">
-                    <button className="btnsUser">{"Borrowed Books"}</button>
-                    <br />
-                    <button className="btnsUser" onClick={this.handleOpenModal}>
-                        {"My Reviews"}
-                    </button>
-                    <br />
-                    <button className="btnsUser" onClick={this.handleOpenModal}>
+
+                <div className="areaUser">
+                    <div id="myBorrowedBooks">
+                        <MyBorrowedBooks />
+                    </div>
+                    <div id="myReviews">
+                        <MyReviews />
+                    </div>
+                    <button className="btnPW" onClick={this.handleOpenModal}>
                         {"Change Password"}
                     </button>
-                </div>
-                <div>
                     <ChangePW
                         close={this.handleCloseModal}
                         isOpen={this.state.showModal}
                     />
+                    <div id="onlyForCoachs">
+                        <p id="privileges">{"Coachs' privileges:"}</p> <br />
+                        <Link to="/addbook" className="coachbtns">
+                            {"Add a Book"}
+                        </Link>
+                        <Link to="/adduser" className="coachbtns">
+                            {"Add a User"}
+                        </Link>
+                    </div>
                 </div>
             </div>
         );

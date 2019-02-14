@@ -32,7 +32,7 @@ class ChangePWForm extends React.Component {
         return (
             <div>
                 <form>
-                    <p>{"Enter new password"}</p>
+                    <p>{"Enter new password"}</p> <br />
                     <input
                         id="newPW"
                         name="newPW"

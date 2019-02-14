@@ -1,31 +1,62 @@
 import * as React from "react";
 import {Link} from "react-router-dom";
 import Logo from "./Login-logo";
-import Loginbutton from "./Login-connection";
+import LoginBookImg from "./Login-image";
 
-export default class Login extends React.Component {
+class Login extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            Username: "",
+            Password: "",
+        };
+
+        this.handleInputChange = this.handleInputChange.bind(this);
+        // this.handleSubmit = this.handleSubmit.bind(this);
+    }
+    handleInputChange(event) {
+        const target = event.target;
+        const value = target.value;
+        const name = target.name;
+
+        this.setState({
+            [name]: value,
+        });
+        console.log(this.state[name]);
+    }
     render() {
         return (
             <div className="container_login">
                 <div className="header_login">
                     <Logo />
+                    <LoginBookImg />
                 </div>
                 <div className="input_area">
-                    <input className="login_input" placeholder="Login" />
-                    <input className="login_input" placeholder="Password" />
-                </div>
-                <div className="btn_area">
-                    <button className="connection_btn">
-                        <Link to="/library">
-                            {" "}
-                            <Loginbutton />{" "}
-                        </Link>
-                    </button>
-                </div>
-                <div className="footer_login">
-                    <p>{"2019 - BeCode©"}</p>
+                    <form>
+                        <input
+                            className="login_input"
+                            type="text"
+                            name="Username"
+                            placeholder="Login"
+                            value={this.state.Username}
+                            onChange={this.handleInputChange}
+                        />
+                        <input
+                            className="login_input"
+                            type="password"
+                            name="Password"
+                            placeholder="Password"
+                            value={this.state.Password}
+                            onChange={this.handleInputChange}
+                        />
+                        <button className="connection_btn">
+                            <Link to="/library"> {"Go"} </Link>
+                        </button>
+                    </form>
                 </div>
             </div>
         );
     }
 }
+
+export default Login;
