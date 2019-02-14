@@ -7,8 +7,8 @@ class ReviewForm extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            NewTitle: " ",
-            NewReview: " ",
+            NewTitle: "",
+            NewReview: "",
         };
 
         this.handleInputChange = this.handleInputChange.bind(this);

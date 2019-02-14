@@ -15,7 +15,7 @@ export default class Routing extends React.Component {
             <Router>
                 <div>
                     <Switch>
-                        <Route exact path="/" component={Login} />
+                        <Route exact path="/" component={Library} />
                         <Route path="/login" component={Login} />
                         <Route path="/library" component={Library} />
                         <Route path="/user" component={UserPage} />
