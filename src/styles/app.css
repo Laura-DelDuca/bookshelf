@@ -379,20 +379,22 @@ textarea {
     grid-row-end: 2;
 }
 
-.divBtnUser {
+.areaUser {
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
 }
 
-.btnsUser {
+.btnPW {
     background-color: #7B6E65;
     border: none;
     color: #FBE7A0;
     padding: 10px;
     border-radius: 10px;
     font-family: 'Nova Flat', cursive;
+    margin-left: 350px;
+    margin-top: 60px;
 }
 
 #divReaderImage {
@@ -406,6 +408,53 @@ textarea {
     grid-row-start: 2;
     grid-row-end: 3;
     width: 350px;
+}
+
+#myBorrowedBooks {
+    margin-top: 100px;
+    margin-left: 10px;
+    color: #7B6E65;
+    font-family: Nova Flat;
+    background-color:rgb(255, 233, 144);
+    padding: 15px;
+    margin-right: 50px;
+}
+
+#myReviews {
+    margin-top: 40px;
+    margin-left: 10px;
+    color: #7B6E65;
+    font-family: Nova Flat;
+    background-color: rgb(255, 233, 144);
+    padding: 15px;
+    margin-right: 50px;
+}
+
+#privileges{
+    font-family: Nova Flat;
+    color: #7B6E65;
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+
+#onlyForCoachs {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.coachbtns {
+    background-color: #7B6E65;
+    border: 2px solid #7B6E65;
+    border-radius: 10px;
+    color: #FBE7A0;
+    font-family: Nova Flat;
+    padding: 8px;
+    text-decoration: none;
+    margin-left: 40px;
 }
 
 /* Modal to change PW */
@@ -427,11 +476,16 @@ textarea {
     font-family: 'Nova Flat', cursive;
     background-color:#7B6E65; 
     width: 300px;
-    height: 150px;
+    height: 250px;
     border: 2px solid #7B6E65;
     border-radius: 10px;
     padding-top: 30px;
     text-align: center;
+}
+
+#closeChangePW{
+    margin-right: 200px;
+    margin-bottom: 30px;
 }
 
 #newPW {
@@ -863,6 +917,11 @@ textarea {
     margin: 30px 10px;
     height: 20px;
     width: 200px;
+}
+
+.loginbook {
+    background-image: linear-gradient(rgb(80, 75, 74), #7b8f7d);
+    padding: 0 33%;
 }
 
 /* ☆::::::::::::::::::: CSS COMPONENT LIBRARY :::::::::::::::::::☆ */

@@ -14,7 +14,7 @@ class ChangePW extends React.Component {
                     isOpen={this.props.isOpen}
                     className="changePW"
                     overlayClassName="overlayChangePW">
-                    <Close onClick={this.props.close} />
+                    <Close id="closeChangePW" onClick={this.props.close} />
                     <ChangePWForm />
                 </ReactModal>
             </div>

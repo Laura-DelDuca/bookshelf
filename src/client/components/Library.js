@@ -1,7 +1,6 @@
 import * as React from "react";
 import Booklist from "./Library_Availablebooks";
 import NavBar from "./navbar";
-import {Link} from "react-router-dom";
 
 export default class Library extends React.Component {
     render() {
@@ -12,8 +11,6 @@ export default class Library extends React.Component {
                 </div>
                 <div className="titleavailable_library">
                     <h2>{"Available Books"}</h2>
-                    <Link to="/addbook">{"(Add a Book)"}</Link>
-                    <Link to="/adduser">{"(Add a User)"}</Link>
                     <div className="underline" />
                 </div>
                 <div className="available_library">
