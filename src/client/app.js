@@ -20,6 +20,11 @@ export default class Routing extends React.Component {
                         <Route path="/library" component={Library} />
                         <Route path="/user" component={UserPage} />
                         <Route path="/description" component={Description} />
+                        <Route
+                            name="desc"
+                            path="/description/:id"
+                            component={Description}
+                        />
                         <Route path="/addbook" component={addBook} />
                         <Route path="/adduser" component={addUser} />
                     </Switch>

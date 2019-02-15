@@ -20,6 +20,10 @@ class Description extends React.Component {
         this.setState({showModal: false});
     }
 
+    componentDidMount() {
+        console.log(this.props);
+    }
+
     render() {
         return (
             <div id="descriptionPage">
@@ -30,15 +34,12 @@ class Description extends React.Component {
                     <h1 id="booktitle">{"Book's Title"}</h1>
                 </div>
                 <div className="bookcover">
-                    <img
-                        id="bookcoverimage"
-                        src="https://images-na.ssl-images-amazon.com/images/I/61wMJ4uS4QL.jpg"
-                    />
-                    <p id="ISBN">{"ISBN ="}</p>
+                    <img src={this.props.location.book.img} />
+                    <p id="ISBN">{this.props.location.book.ISBN}</p>
                 </div>
                 <div className="aboutthebook">
-                    <p>{"Language"}</p>
-                    <p>{"Author"}</p>
+                    <p>{this.props.location.book.title}</p>
+                    <p>{this.props.location.book.author}</p>
                     <p>{"Format"}</p>
                     <p>{"Available"}</p>
                     <button id="borrowbtn">{"Borrow"}</button>
