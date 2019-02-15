@@ -3,8 +3,8 @@ import NavBar from "./navbar";
 import WriteReview from "./modal-writeReview";
 
 class Description extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             showModal: false,
         };
@@ -37,8 +37,8 @@ class Description extends React.Component {
                     <p id="ISBN">{"ISBN ="}</p>
                 </div>
                 <div className="aboutthebook">
-                    <p>{"Language"}</p>
-                    <p>{"Author"}</p>
+                    <p>{this.props.params.book.title}</p>
+                    <p>{this.props.book.author}</p>
                     <p>{"Format"}</p>
                     <p>{"Available"}</p>
                     <button id="borrowbtn">{"Borrow"}</button>
