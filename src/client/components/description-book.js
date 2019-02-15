@@ -3,8 +3,8 @@ import NavBar from "./navbar";
 import WriteReview from "./modal-writeReview";
 
 class Description extends React.Component {
-    constructor(props) {
-        super(props);
+    constructor() {
+        super();
         this.state = {
             showModal: false,
         };
@@ -27,7 +27,7 @@ class Description extends React.Component {
                     <NavBar />
                 </div>
                 <div className="booktitle">
-                    <h1 id="booktitle">{"Book's Title"}</h1>
+                    <h1 id="booktitle">{this.props.location.book.title}</h1>
                 </div>
                 <div className="bookcover">
                     <img
@@ -37,7 +37,6 @@ class Description extends React.Component {
                     <p id="ISBN">{this.props.location.book.ISBN}</p>
                 </div>
                 <div className="aboutthebook">
-                    <p>{this.props.location.book.title}</p>
                     <p>{this.props.location.book.author}</p>
                     <p>{"Format"}</p>
                     <p>{"Available"}</p>

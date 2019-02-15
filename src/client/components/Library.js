@@ -1,5 +1,6 @@
 import * as React from "react";
 import Booklist from "./Library_Availablebooks";
+import BooklistBorrowed from "./Library_Borrowedbooks";
 import NavBar from "./navbar";
 
 export default class Library extends React.Component {
@@ -22,7 +23,7 @@ export default class Library extends React.Component {
                 </div>
                 <div className="borrowed_library">
                     <ul>
-                        <Booklist />
+                        <BooklistBorrowed />
                     </ul>
                 </div>
             </div>
