@@ -1,10 +1,10 @@
 import * as React from "react";
 import {books} from "./databasetest";
 import {Link} from "react-router-dom";
-export default class Booklist extends React.Component {
+export default class BooklistBorrowed extends React.Component {
     render() {
         const listBook = books.map(book => {
-            if (book.hardcover === true) {
+            if (book.ebook === true) {
                 return (
                     <Link
                         to={{pathname: `/description/${book.id}`, book: book}}
