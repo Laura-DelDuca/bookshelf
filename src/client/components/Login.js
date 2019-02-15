@@ -54,7 +54,7 @@ class Login extends React.Component {
                         </button> */}
                     </form>
                     <button className="connection_btn">
-                        <Link to="/library"> {"Go"} </Link>
+                        <Link to="/library"> {"Go !"} </Link>
                     </button>
                 </div>
             </div>
