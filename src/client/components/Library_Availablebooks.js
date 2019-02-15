@@ -10,7 +10,7 @@ export default class Booklist extends React.Component {
                     to={{pathname: "/description/" + book.id, book: book}}
                     key={book.id}>
                     <li key={book.id}>
-                        <img src={book.img} alt="Book Cover" />
+                        <img src={book.URL} alt="Book Cover" />
                         <h3>{book.title}</h3>
                     </li>
                 </Link>
