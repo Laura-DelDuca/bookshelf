@@ -919,6 +919,15 @@ textarea {
     width: 200px;
 }
 
+.loginbook {
+    background-image: linear-gradient(rgb(80, 75, 74), #7b8f7d);
+    padding: 0 33%;
+}
+
+.connection_btn a {
+    text-decoration: none;
+    color: grey;
+}
 /* ☆::::::::::::::::::: CSS COMPONENT LIBRARY :::::::::::::::::::☆ */
 /* Positionnement */
 .container_library {

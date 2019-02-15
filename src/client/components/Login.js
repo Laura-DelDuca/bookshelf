@@ -29,7 +29,7 @@ class Login extends React.Component {
             <div className="container_login">
                 <div className="header_login">
                     <Logo />
-                    <LoginBookImg />
+                    <LoginBookImg className="loginbook" />
                 </div>
                 <div className="input_area">
                     <form>
@@ -49,10 +49,13 @@ class Login extends React.Component {
                             value={this.state.Password}
                             onChange={this.handleInputChange}
                         />
-                        <button className="connection_btn">
+                        {/* <button className="connection_btn">
                             <Link to="/library"> {"Go"} </Link>
-                        </button>
+                        </button> */}
                     </form>
+                    <button className="connection_btn">
+                        <Link to="/library"> {"Go !"} </Link>
+                    </button>
                 </div>
             </div>
         );

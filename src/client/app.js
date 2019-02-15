@@ -21,6 +21,7 @@ export default class Routing extends React.Component {
                         <Route path="/user" component={UserPage} />
                         <Route path="/description" component={Description} />
                         <Route
+                            name="desc"
                             path="/description/:id"
                             component={Description}
                         />

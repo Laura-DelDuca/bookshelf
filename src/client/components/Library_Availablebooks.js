@@ -6,7 +6,9 @@ export default class Booklist extends React.Component {
     render() {
         const listBook = books.map(book => {
             return (
-                <Link to="/description/id" params={{id: "book.id"}}>
+                <Link
+                    to={{pathname: "/description/" + book.id, book: book}}
+                    key={book.id}>
                     <li key={book.id}>
                         <img src={book.img} alt="Book Cover" />
                         <h3>{book.title}</h3>
