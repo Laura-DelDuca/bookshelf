@@ -34,7 +34,10 @@ class Description extends React.Component {
                     <h1 id="booktitle">{"Book's Title"}</h1>
                 </div>
                 <div className="bookcover">
-                    {/* <img {this.props.location.book.img} /> */}
+                    <img
+                        id="bookcoverimage"
+                        src={this.props.location.book.URL}
+                    />
                     <p id="ISBN">{this.props.location.book.ISBN}</p>
                 </div>
                 <div className="aboutthebook">
