@@ -2,7 +2,7 @@ export const books = [
     {
         id: 0,
         title: "Design émotionnel",
-        author: "Jeremy Keith",
+        author: "Aaron Walter",
         ISBN: "9-782212-128611",
         language: "FR",
         hardcover: true,
