@@ -15,7 +15,8 @@ export default class Routing extends React.Component {
             <Router>
                 <div>
                     <Switch>
-                        <Route exact path="/" component={Library} />
+                        {/* A n'ouvrir que sur Chrome */}
+                        <Route exact path="/" component={Login} />
                         <Route path="/login" component={Login} />
                         <Route path="/library" component={Library} />
                         <Route path="/user" component={UserPage} />

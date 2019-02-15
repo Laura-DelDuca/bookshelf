@@ -20,10 +20,6 @@ class Description extends React.Component {
         this.setState({showModal: false});
     }
 
-    componentDidMount() {
-        console.log(this.props);
-    }
-
     render() {
         return (
             <div id="descriptionPage">

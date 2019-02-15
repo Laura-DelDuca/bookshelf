@@ -1,14 +1,11 @@
 import React from "react";
+import UserReviews from "./user_reviews";
 
 class MyReviews extends React.Component {
     render() {
         return (
             <div>
-                <p>
-                    {
-                        "Ici s'affichent les reviews récupérées de la BD pour l'utilisateur courant"
-                    }
-                </p>
+                <UserReviews />
             </div>
         );
     }

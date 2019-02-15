@@ -34,22 +34,9 @@ class UserPage extends React.Component {
 
                 <div id="divReaderImage">
                     <Reader />
-                </div>
-
-                <div className="areaUser">
-                    <div id="myBorrowedBooks">
-                        <MyBorrowedBooks />
-                    </div>
-                    <div id="myReviews">
-                        <MyReviews />
-                    </div>
                     <button className="btnPW" onClick={this.handleOpenModal}>
                         {"Change Password"}
                     </button>
-                    <ChangePW
-                        close={this.handleCloseModal}
-                        isOpen={this.state.showModal}
-                    />
                     <div id="onlyForCoachs">
                         <p id="privileges">{"Coachs' privileges:"}</p> <br />
                         <Link to="/addbook" className="coachbtns">
@@ -59,6 +46,19 @@ class UserPage extends React.Component {
                             {"Add a User"}
                         </Link>
                     </div>
+                </div>
+
+                <div className="areaUser">
+                    <div id="myBorrowedBooks">
+                        <MyBorrowedBooks />
+                    </div>
+                    <div id="myReviews">
+                        <MyReviews />
+                    </div>
+                    <ChangePW
+                        close={this.handleCloseModal}
+                        isOpen={this.state.showModal}
+                    />
                 </div>
             </div>
         );

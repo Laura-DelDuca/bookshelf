@@ -393,13 +393,14 @@ textarea {
     padding: 10px;
     border-radius: 10px;
     font-family: 'Nova Flat', cursive;
-    margin-left: 350px;
-    margin-top: 60px;
+    margin-left: 100px;
+    margin-top: 0px;
+    margin-bottom: 100px;
 }
 
 #divReaderImage {
-    align-self: center;
     justify-self: center;
+    margin-top: 100px;
 }
 
 .bigReader{
@@ -407,7 +408,7 @@ textarea {
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-    width: 350px;
+    width: 150px;
 }
 
 #myBorrowedBooks {
@@ -430,6 +431,18 @@ textarea {
     margin-right: 50px;
 }
 
+#titleReview{
+    font-weight: bold;
+}
+
+#commentReview{
+    font-style: italic;
+}
+
+#listReviews {
+    list-style: none;
+}
+
 #privileges{
     font-family: Nova Flat;
     color: #7B6E65;
@@ -438,12 +451,10 @@ textarea {
 }
 
 #onlyForCoachs {
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
-    margin-top: 40px;
-    margin-left: 10px;
 }
 
 .coachbtns {
