@@ -2,6 +2,7 @@ import * as React from "react";
 import {Link} from "react-router-dom";
 import Logo from "./Login-logo";
 import LoginBookImg from "./Login-image";
+import Loginbutton from "./Login-connection";
 
 class Login extends React.Component {
     constructor(props) {
@@ -53,9 +54,12 @@ class Login extends React.Component {
                             <Link to="/library"> {"Go"} </Link>
                         </button> */}
                     </form>
-                    <button className="connection_btn">
+                    {/* <button className="connection_btn">
                         <Link to="/library"> {"Go !"} </Link>
-                    </button>
+                    </button> */}
+                    <Link to="/library">
+                        <Loginbutton />
+                    </Link>
                 </div>
             </div>
         );

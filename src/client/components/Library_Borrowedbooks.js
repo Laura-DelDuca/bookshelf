@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 export default class BooklistBorrowed extends React.Component {
     render() {
         const listBook = books.map(book => {
-            if (book.ebook === true) {
+            if (book.available === false) {
                 return (
                     <Link
                         to={{pathname: `/description/${book.id}`, book: book}}
