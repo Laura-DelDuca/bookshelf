@@ -33,10 +33,12 @@ Jordan s'est occupé du déploiement sur Heroku
 - Ajout/affichage de la note sur 5 des livres
 - Récupération des reviews sur la page de description de chaque bouquin (car pas d'accès à la BD)
 - Affichage de la liste des livres empruntés par un utilisateur courant (car pas d'accès à une base de données)
+- Récupération de la langue en BD
 
 # Fonctionnalités back-end
 
-
+Olivier?
+Jordan?
 
 
 
