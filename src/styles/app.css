@@ -74,6 +74,7 @@ ul {
     padding: 10px;
     border-radius: 10px;
     font-family: 'Nova Flat', cursive;
+    margin-left: 30px;
 }
 
 textarea {
@@ -346,6 +347,11 @@ textarea {
     grid-row-end: 4;
 }
 
+#summary {
+    margin-right: 80px;
+    text-align: justify;
+}
+
 #borrowbtn{
     background-color: #FAE6A3;
     border: none;
@@ -416,7 +422,7 @@ textarea {
     margin-left: 10px;
     color: #7B6E65;
     font-family: Nova Flat;
-    background-color:rgb(255, 233, 144);
+    background-color:#f8ca73;
     padding: 15px;
     margin-right: 50px;
 }
@@ -426,7 +432,7 @@ textarea {
     margin-left: 10px;
     color: #7B6E65;
     font-family: Nova Flat;
-    background-color: rgb(255, 233, 144);
+    background-color: #f8ca73;
     padding: 15px;
     margin-right: 50px;
 }
