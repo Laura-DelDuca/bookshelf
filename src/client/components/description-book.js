@@ -34,12 +34,26 @@ class Description extends React.Component {
                         id="bookcoverimage"
                         src={this.props.location.book.URL}
                     />
-                    <p id="ISBN">{this.props.location.book.ISBN}</p>
+                    <p id="ISBN">
+                        {"ISBN:"}
+                        {this.props.location.book.ISBN}
+                    </p>
                 </div>
                 <div className="aboutthebook">
-                    <p>{this.props.location.book.author}</p>
+                    <p>
+                        {"By: "}
+                        {this.props.location.book.author}
+                    </p>
+                    <br />
+                    <p id="summary">
+                        {"About the book: "} <br />
+                        {this.props.location.book.summary}
+                    </p>
+                    <br />
                     <p>{"Format"}</p>
+                    <br />
                     <p>{"Available"}</p>
+                    <br />
                     <button id="borrowbtn">{"Borrow"}</button>
                     <button id="writeamodalbtn" onClick={this.handleOpenModal}>
                         {"Write a Review"}
