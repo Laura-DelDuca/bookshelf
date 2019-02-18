@@ -28,6 +28,12 @@ Jordan s'est occupé du déploiement sur Heroku
 - Création de modales
 - Affichage de données depuis un fichier .json (simulation de base de données)
 
+# Fonctionnalités front-end manquantes:
+- Liaison avec la base de données (BD simulée par fichiers json)
+- Ajout/affichage de la note sur 5 des livres
+- Récupération des reviews sur la page de description de chaque bouquin (car pas d'accès à la BD)
+- Affichage de la liste des livres empruntés par un utilisateur courant (car pas d'accès à une base de données)
+
 # Fonctionnalités back-end
 
 
