@@ -4,7 +4,7 @@ import loginbutton from "../images/login.png";
 class Loginbutton extends React.Component {
     render() {
         return (
-            <div id="loginbutton">
+            <div id="loginbutton" className="loginbutton">
                 <img
                     src={loginbutton}
                     className="connection_img"
