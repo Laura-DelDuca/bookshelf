@@ -74,7 +74,6 @@ ul {
     padding: 10px;
     border-radius: 10px;
     font-family: 'Nova Flat', cursive;
-    margin-left: 30px;
 }
 
 textarea {
@@ -84,7 +83,7 @@ textarea {
   .writeReview {
     background-color:#7B6E65; 
     width: 500px;
-    height: 550px;
+    height: 600px;
     border: 2px solid #7B6E65;
     border-radius: 10px;
   }
@@ -181,6 +180,7 @@ textarea {
 .closebtn {
     border: none;
     background-color: transparent;
+    padding: 30px;
 }
 
 .stars {
@@ -336,7 +336,7 @@ textarea {
 }
 
 #bookcoverimage {
-    width: 150px;
+    width: 250px;
 }
 
 .aboutthebook {
@@ -353,6 +353,15 @@ textarea {
 }
 
 #borrowbtn{
+    background-color: #FAE6A3;
+    border: none;
+    color: #E1594D;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Nova Flat', cursive;
+}
+
+#returnBtn {
     background-color: #FAE6A3;
     border: none;
     color: #E1594D;
@@ -896,7 +905,8 @@ textarea {
     display: grid;
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(to bottom right, rgb(56, 51, 50), #7c6d69ff);
+    background-image: url("../client/images/background.png");
+    background-color: #b7d4b9;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr 1fr 2fr;
     text-align: center;
@@ -916,7 +926,6 @@ textarea {
     grid-row-start: 2;
     grid-row-end: 5;
     margin: 0 auto;
-    background-image: linear-gradient(rgb(123, 143, 125), #bddbbfff);
     width: 100vw;
 }
 
@@ -934,11 +943,6 @@ textarea {
     margin: 30px 10px;
     height: 20px;
     width: 200px;
-}
-
-.loginbook {
-    background-image: linear-gradient(rgb(80, 75, 74), #7b8f7d);
-    padding: 0 33%;
 }
 
 .connection_btn a {

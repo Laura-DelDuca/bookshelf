@@ -1,6 +1,8 @@
 import React from "react";
 import NavBar from "./navbar";
 import WriteReview from "./modal-writeReview";
+import Borrow from "./borrowBtn";
+import BorrowedBy from "./borrowedBy";
 
 class Description extends React.Component {
     constructor() {
@@ -59,9 +61,14 @@ class Description extends React.Component {
                         {this.props.location.book.ebook ? "Ebook ✓" : "Ebook ✗"}
                     </p>
                     <br />
-                    <p>{"Available"}</p>
+                    <p>
+                        {this.props.location.book.available ? (
+                            <Borrow />
+                        ) : (
+                            <BorrowedBy />
+                        )}
+                    </p>
                     <br />
-                    <button id="borrowbtn">{"Borrow"}</button>
                     <button id="writeamodalbtn" onClick={this.handleOpenModal}>
                         {"Write a Review"}
                     </button>
