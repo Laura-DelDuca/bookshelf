@@ -74,7 +74,6 @@ ul {
     padding: 10px;
     border-radius: 10px;
     font-family: 'Nova Flat', cursive;
-    margin-left: 30px;
 }
 
 textarea {
@@ -336,7 +335,7 @@ textarea {
 }
 
 #bookcoverimage {
-    width: 150px;
+    width: 250px;
 }
 
 .aboutthebook {
@@ -353,6 +352,15 @@ textarea {
 }
 
 #borrowbtn{
+    background-color: #FAE6A3;
+    border: none;
+    color: #E1594D;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Nova Flat', cursive;
+}
+
+#returnBtn {
     background-color: #FAE6A3;
     border: none;
     color: #E1594D;
