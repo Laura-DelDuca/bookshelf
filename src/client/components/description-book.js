@@ -50,7 +50,14 @@ class Description extends React.Component {
                         {this.props.location.book.summary}
                     </p>
                     <br />
-                    <p>{"Format"}</p>
+                    <p>
+                        {this.props.location.book.hardcover
+                            ? "Hardcover ✓"
+                            : "Hardcover ✗"}
+                    </p>
+                    <p>
+                        {this.props.location.book.ebook ? "Ebook ✓" : "Ebook ✗"}
+                    </p>
                     <br />
                     <p>{"Available"}</p>
                     <br />
